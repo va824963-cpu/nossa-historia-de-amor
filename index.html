@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170b19">
+<meta name="description" content="Uma pequena surpresa feita com amor para você.">
+<title>Nossa História de Amor ❤️</title>
+<style>
+:root{--wine:#5b1838;--rose:#e8a9bb;--gold:#e8c77a;--cream:#fff4e9;--ink:#1a0c19}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#160b18;color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}.stars,.stars:before,.stars:after{position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(1px 1px at 12% 18%,#fff 98%,transparent),radial-gradient(1px 1px at 75% 30%,#f7d9a1 98%,transparent),radial-gradient(2px 2px at 42% 70%,#fff 98%,transparent),radial-gradient(1px 1px at 90% 85%,#fff 98%,transparent),radial-gradient(1px 1px at 22% 92%,#f4c8d8 98%,transparent);background-size:280px 280px;opacity:.6;animation:twinkle 6s ease-in-out infinite alternate}
+.stars:before,.stars:after{content:"";background-size:390px 390px;transform:translateY(10px);opacity:.4;animation:twinkle 9s ease-in-out infinite alternate-reverse}
+@keyframes twinkle{from{opacity:.25}to{opacity:.8}}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}.float-heart{position:absolute;bottom:-35px;color:#f2a9c2;animation:rise linear forwards;text-shadow:0 0 15px #f08bb3}
+@keyframes rise{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+main{position:relative;z-index:1}.screen{min-height:100svh;padding:90px 22px;display:flex;align-items:center;justify-content:center;position:relative}.intro{flex-direction:column;text-align:center;background:radial-gradient(ellipse at center,#4a1839 0%,#211024 48%,#100914 100%);padding:30px 20px}
+.moon{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,#fff5d9,#d6a8b4);box-shadow:0 0 55px #f4c4d7;margin-bottom:28px;position:relative}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.5rem,8vw,5rem);font-weight:normal;line-height:1.05;margin-bottom:18px;color:#fff0e9;text-shadow:0 4px 35px #e6a2c355}
+.intro p{max-width:620px;font-size:clamp(1.08rem,3vw,1.35rem);line-height:1.8;color:#f1dbe2}
+.primary,.secondary{border:1px solid #e8c77a;border-radius:999px;padding:15px 27px;background:linear-gradient(135deg,#8b3158,#54203e);color:#fff7ed;letter-spacing:.08em;box-shadow:0 10px 35px #0005;transition:.3s}
+.primary:hover,.secondary:hover{transform:translateY(-3px);box-shadow:0 12px 40px #d77da455}.tiny{font-size:.78rem;color:#d9b9c6;margin-top:18px}
+.section{max-width:1050px;margin:auto;padding:100px 22px;scroll-margin-top:20px}.eyebrow{text-transform:uppercase;letter-spacing:.22em;color:var(--gold);font: .75rem Arial,sans-serif;text-align:center}
+h2{text-align:center;font-size:clamp(2rem,5vw,3.4rem);font-weight:normal;color:#ffe9e9;margin:12px 0 24px}
+.lead{max-width:760px;margin:0 auto 35px;text-align:center;line-height:1.9;font-size:1.12rem;color:#ead4dd}
+.story-card{max-width:800px;margin:35px auto;padding:clamp(25px,5vw,50px);border:1px solid #c99a7960;border-radius:22px;background:linear-gradient(145deg,#57213b99,#26152bdf);box-shadow:0 20px 70px #0005;line-height:1.95;font-size:1.1rem}
+.story-card strong{color:#f2d38d}.memory-date{text-align:center;color:var(--gold);font-size:1.2rem;letter-spacing:.08em;margin-bottom:18px}
+.traits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.trait{padding:28px 22px;border:1px solid #dca7b34d;border-radius:18px;background:#ffffff09;text-align:center;backdrop-filter:blur(8px)}
+.trait .symbol{font-size:2rem;margin-bottom:12px}.trait h3{font-weight:normal;color:#f2c5d2;font-size:1.35rem}.trait p{font-family:Arial,sans-serif;color:#e4cfd7;line-height:1.75;font-size:.95rem}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.photo{border:0;padding:12px 12px 38px;background:#f7eee6;box-shadow:0 12px 30px #0006;transform:rotate(var(--tilt));transition:transform .35s,box-shadow .35s;cursor:zoom-in;color:#5a3242}
+.photo:hover{transform:rotate(0) translateY(-7px) scale(1.025);box-shadow:0 18px 38px #0008}.photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:#d9c8c5}.photo span{display:block;margin-top:12px;font-size:1rem}
+.music-card{max-width:600px;margin:35px auto;padding:28px;border:1px solid #d8b77977;border-radius:20px;background:#31182ddd;text-align:center}
+.track{font-size:1.3rem;color:#f5d9df;margin-bottom:18px}.music-controls{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.round{width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:#6d294a;color:white;font-size:1.2rem}
+input[type=range]{accent-color:#e9b2c2;width:min(260px,65vw)}.music-note{color:#d7b7c5;font: .82rem Arial,sans-serif;margin-top:15px}
+.equalizer{height:28px;display:flex;gap:4px;align-items:center;justify-content:center;margin:10px}.equalizer i{width:3px;height:8px;background:#e8c77a;border-radius:3px}.playing .equalizer i{animation:wave .6s ease-in-out infinite alternate}.playing .equalizer i:nth-child(2n){animation-delay:.2s}.playing .equalizer i:nth-child(3n){animation-delay:.4s}@keyframes wave{to{height:26px}}
+.envelope-wrap{text-align:center;margin:35px auto}.envelope{position:relative;width:min(340px,85vw);height:220px;margin:auto;background:#e7b8c3;border-radius:8px;box-shadow:0 20px 45px #0007;cursor:pointer;perspective:800px}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#c8879b 50%) left/50% 100% no-repeat,linear-gradient(215deg,transparent 49%,#d99cac 50%) right/50% 100% no-repeat;z-index:2}
+.flap{position:absolute;inset:0;background:#f2cbd2;clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .8s;z-index:3}
+.seal{position:absolute;z-index:4;top:91px;left:calc(50% - 22px);width:44px;height:44px;border-radius:50%;background:#8d3158;color:white;display:grid;place-items:center;font-size:1.3rem}
+.envelope.open .flap{transform:rotateX(180deg)}.letter{display:none;max-width:760px;margin:28px auto 0;padding:clamp(25px,5vw,55px);background:linear-gradient(135deg,#fff7e9,#f2dfd4);color:#593448;border-radius:8px;box-shadow:0 20px 55px #0007;line-height:2;font-size:1.05rem;text-align:left;white-space:pre-line;animation:appear .8s ease}
+.letter.show{display:block}@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:680px;margin:35px auto}.timebox{padding:20px 8px;border:1px solid #e6c17b66;border-radius:15px;background:#ffffff0b;text-align:center}
+.timebox strong{display:block;font-size:clamp(1.7rem,5vw,2.7rem);font-weight:normal;color:#f3d28d;font-variant-numeric:tabular-nums}.timebox span{font: .75rem Arial,sans-serif;letter-spacing:.1em;color:#e5cbd4;text-transform:uppercase}
+.final{text-align:center;background:radial-gradient(ellipse at center,#51203d,#160b18 70%);padding:110px 22px}.final blockquote{max-width:780px;margin:25px auto;font-size:clamp(1.7rem,5vw,3rem);line-height:1.35;color:#ffe6e9}
+footer{text-align:center;padding:25px;color:#bda2af;font-size:.85rem}
+.nav{position:fixed;z-index:10;top:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px;padding:7px;background:#1b0e1bd9;border:1px solid #ffffff20;border-radius:999px;backdrop-filter:blur(12px);max-width:calc(100% - 20px)}
+.nav a{color:#f3dce4;text-decoration:none;font: .72rem Arial,sans-serif;padding:9px 11px;border-radius:30px;white-space:nowrap}.nav a:hover{background:#ffffff18}
+.lightbox{position:fixed;inset:0;background:#09050deF;z-index:50;display:none;align-items:center;justify-content:center;padding:20px}.lightbox.show{display:flex}.lightbox img{max-width:min(90vw,850px);max-height:82vh;object-fit:contain;border:10px solid #fff5ee;box-shadow:0 20px 80px #000}.close{position:absolute;right:22px;top:18px;background:none;border:1px solid #fff;color:white;border-radius:50%;width:42px;height:42px;font-size:1.4rem}
+@media(max-width:700px){.traits{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);gap:12px}.photo{padding:8px 8px 30px}.photo span{font-size:.85rem}.nav{width:calc(100% - 16px);justify-content:space-around}.nav a{font-size:.62rem;padding:9px 7px}.section{padding:82px 18px}.counter{gap:7px}.timebox{padding:15px 4px}.timebox span{font-size:.62rem}}
+@media(max-width:380px){.gallery{grid-template-columns:1fr 1fr}.nav a{padding:8px 5px}}
+</style>
+</head>
+<body>
+<div class="stars"></div><div id="hearts"></div>
+<main>
+<section class="screen intro" id="inicio">
+  <div class="moon"></div>
+  <div class="eyebrow">um presente feito com amor</div>
+  <h1>Nossa história<br>de amor</h1>
+  <p>Preparei uma pequena surpresa para a pessoa que tornou meus dias mais especiais...</p>
+  <button class="primary" id="openSurprise">ABRIR MINHA SURPRESA ❤️</button>
+  <div class="tiny">Feito especialmente para você. Com carinho, do seu namorado.</div>
+</section>
+
+<nav class="nav" aria-label="Navegação da carta">
+  <a href="#historia">Nossa história</a><a href="#detalhes">Você</a><a href="#fotos">Fotos</a><a href="#carta">Carta</a><a href="#tempo">Tempo</a>
+</nav>
+
+<section class="section" id="historia">
+  <div class="eyebrow">capítulo 01 · o começo de tudo</div><h2>Uma noite que ficou para sempre ✨</h2>
+  <div class="story-card">
+    <div class="memory-date">25 DE AGOSTO DE 2026 · SANTA MARIA DO PARÁ</div>
+    Às vezes, os momentos mais especiais da nossa vida acontecem quando menos esperamos. Naquela noite de 25 de agosto de 2026, em uma praça de Santa Maria do Pará, sob um céu cheio de estrelas, começou uma história que eu quero guardar para sempre.<br><br>
+    Talvez naquele momento eu ainda não soubesse explicar tudo o que estava sentindo, mas uma coisa era certa: havia algo em você que me encantava de uma maneira diferente.
+  </div>
+</section>
+
+<section class="section" id="detalhes">
+  <div class="eyebrow">capítulo 02 · seus detalhes</div><h2>O que me fez me apaixonar por você</h2>
+  <p class="lead">Tem coisas em você que talvez pareçam pequenas, mas que para mim fazem toda a diferença.</p>
+  <div class="traits">
+    <article class="trait"><div class="symbol">😊</div><h3>Seu sorriso</h3><p>Foi no seu sorriso que comecei a encontrar motivos para sorrir também. Existe algo nele que ilumina meus dias e que, mesmo sem perceber, consegue transformar qualquer momento simples em algo especial.</p></article>
+    <article class="trait"><div class="symbol">✨</div><h3>Seu olhar</h3><p>Seu olhar tem algo que eu não consigo explicar completamente. É como se, por alguns segundos, o mundo inteiro ficasse em silêncio. Foi nele que encontrei uma beleza que vai muito além da aparência.</p></article>
+    <article class="trait"><div class="symbol">🍇</div><h3>Seu cheirinho</h3><p>E como esquecer seu cheirinho? Esse aroma encantador de uva que ficou guardado na minha memória. É incrível como um simples perfume pode despertar tantas lembranças e fazer alguém se sentir tão perto, mesmo quando está longe.</p></article>
+  </div>
+</section>
+
+<section class="section" id="fotos">
+  <div class="eyebrow">capítulo 03 · nossas recordações</div><h2>Um álbum só nosso 📸</h2>
+  <p class="lead">Cada fotografia guarda um pedacinho do que estamos construindo. Toque em uma delas para ver de pertinho.</p>
+  <div class="gallery">
+    <button class="photo" style="--tilt:-2deg" data-photo="0"><img src="assets/alianca.jpg" alt="Nossas alianças"><span>Um símbolo do nosso carinho ❤️</span></button>
+    <button class="photo" style="--tilt:2deg" data-photo="1"><img src="assets/nosso_beijo.jpg" alt="Um beijo nosso"><span>Um beijo para guardar</span></button>
+    <button class="photo" style="--tilt:-1deg" data-photo="2"><img src="assets/nosso_carinho.jpg" alt="Nós juntinhos"><span>Meu lugar favorito</span></button>
+    <button class="photo" style="--tilt:2deg" data-photo="3"><img src="assets/seu_encanto.jpg" alt="Um retrato dela"><span>Seu jeitinho especial</span></button>
+    <button class="photo" style="--tilt:-2deg" data-photo="4"><img src="assets/nosso_abraco.jpg" alt="Nosso abraço"><span>Onde mora o carinho</span></button>
+    <button class="photo" style="--tilt:1deg" data-photo="5"><img src="assets/mais_uma_memoria.jpg" alt="Mais uma lembrança nossa"><span>Mais uma memória nossa</span></button>
+  </div>
+</section>
+
+<section class="section" id="musica">
+  <div class="eyebrow">capítulo 04 · nossa trilha sonora</div><h2>Uma música, muitas lembranças 🎵</h2>
+  <div class="music-card" id="musicCard">
+    <div class="track">Cheirinho de Uva</div>
+    <div class="equalizer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="music-controls">
+      <button class="round" id="playPause" aria-label="Reproduzir ou pausar">▶</button>
+      <span id="currentTime">0:00</span>
+      <input id="seek" type="range" min="0" max="100" value="0" aria-label="Progresso da música">
+      <span id="duration">0:00</span>
+    </div>
+    <div style="margin-top:16px">Volume <input id="volume" type="range" min="0" max="1" step=".01" value=".8" aria-label="Volume"></div>
+    <div class="music-note">Aperte o play para ouvir nossa trilha sonora.</div>
+    <audio id="song" preload="metadata" src="assets/cheirinho_de_uva.mp3"></audio>
+  </div>
+</section>
+
+<section class="section" id="carta">
+  <div class="eyebrow">capítulo 05 · palavras do coração</div><h2>Uma cartinha para você 💌</h2>
+  <p class="lead">Tem palavras que merecem ser abertas com calma. Toque no envelope para ler.</p>
+  <div class="envelope-wrap">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Abrir a carta">
+      <div class="flap"></div><div class="seal">❤️</div>
+    </div>
+    <p class="tiny" id="envelopeHint">Toque no envelope para abrir sua cartinha</p>
+  </div>
+  <article class="letter" id="letter">
+Meu amor,
+
+Se eu pudesse voltar naquela noite de 25 de agosto de 2026, na praça de Santa Maria do Pará, faria tudo novamente.
+
+Voltaria para aquele céu estrelado, para aquele momento e, principalmente, para encontrar você mais uma vez.
+
+Desde que você entrou na minha vida, comecei a perceber que existem pessoas que chegam de uma maneira tão especial que acabam deixando marcas no nosso coração.
+
+Eu me apaixonei pelo seu sorriso, pelo seu olhar e por esse seu cheirinho encantador de uva que é tão seu e que eu jamais quero esquecer.
+
+Talvez eu não consiga encontrar palavras suficientes para explicar tudo o que sinto, mas quero que você saiba que cada detalhe seu tem um lugar especial dentro de mim.
+
+Quero continuar construindo lembranças ao seu lado, colecionando sorrisos, vivendo momentos inesquecíveis e descobrindo cada vez mais motivos para amar você.
+
+Se nossa história começou sob um céu estrelado, espero que ainda tenhamos infinitas noites bonitas para escrever juntos.
+
+Obrigado por fazer parte da minha vida.
+
+Com todo o meu amor,
+Seu namorado. ❤️
+  </article>
+</section>
+
+<section class="section" id="tempo">
+  <div class="eyebrow">capítulo 06 · cada segundo importa</div><h2>Cada segundo ao seu lado é uma lembrança que vale a pena viver.</h2>
+  <p class="lead">Desde 25 de agosto de 2026, nossa história vem ganhando novos instantes.</p>
+  <div class="counter">
+    <div class="timebox"><strong id="days">0</strong><span>Dias</span></div>
+    <div class="timebox"><strong id="hours">00</strong><span>Horas</span></div>
+    <div class="timebox"><strong id="minutes">00</strong><span>Minutos</span></div>
+    <div class="timebox"><strong id="seconds">00</strong><span>Segundos</span></div>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="eyebrow">última página · mas nunca o fim</div>
+  <blockquote>“Se eu tivesse que escolher novamente, entre todas as pessoas desse mundo, ainda escolheria você.”</blockquote>
+  <p class="lead">Essa é apenas a primeira página de uma história que eu quero continuar escrevendo ao seu lado. ❤️</p>
+  <button class="primary" id="kiss">TOQUE AQUI PARA RECEBER UM BEIJO ❤️</button>
+  <p id="kissMessage" style="margin-top:28px;font-size:1.25rem;color:#f4cbd8;min-height:2em"></p>
+</section>
+<footer>Feito com amor, para a pessoa mais especial. ❤️</footer>
+</main>
+
+<div class="lightbox" id="lightbox"><button class="close" id="closeLightbox" aria-label="Fechar">×</button><img id="largePhoto" src="" alt="Fotografia ampliada"></div>
+<script>
+const $ = id => document.getElementById(id);
+const song=$('song'), play=$('playPause'), card=$('musicCard'), seek=$('seek');
+function timeFmt(s){if(!Number.isFinite(s))return '0:00';let m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+String(sec).padStart(2,'0')}
+$('openSurprise').addEventListener('click',()=>{
+  $('historia').scrollIntoView({behavior:'smooth'});
+  song.play().then(()=>{play.textContent='Ⅱ';card.classList.add('playing')}).catch(()=>{});
+  burstHearts(18);
+});
+play.addEventListener('click',()=>{if(song.paused){song.play().then(()=>{play.textContent='Ⅱ';card.classList.add('playing')}).catch(()=>{})}else{song.pause();play.textContent='▶';card.classList.remove('playing')}});
+song.addEventListener('loadedmetadata',()=>$('duration').textContent=timeFmt(song.duration));
+song.addEventListener('timeupdate',()=>{if(song.duration){seek.value=song.currentTime/song.duration*100;$('currentTime').textContent=timeFmt(song.currentTime)}});
+song.addEventListener('ended',()=>{play.textContent='▶';card.classList.remove('playing')});
+seek.addEventListener('input',()=>{if(song.duration)song.currentTime=seek.value/100*song.duration});
+$('volume').addEventListener('input',e=>song.volume=Number(e.target.value));
+function openLetter(){ $('envelope').classList.add('open');setTimeout(()=>$('letter').classList.add('show'),450);$('envelopeHint').textContent='Uma mensagem escrita com todo o meu carinho ❤️';burstHearts(8)}
+$('envelope').addEventListener('click',openLetter);
+$('envelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+const photos=['assets/alianca.jpg','assets/nosso_beijo.jpg','assets/nosso_carinho.jpg','assets/seu_encanto.jpg','assets/nosso_abraco.jpg','assets/mais_uma_memoria.jpg'];
+document.querySelectorAll('.photo').forEach(btn=>btn.addEventListener('click',()=>{$('largePhoto').src=photos[Number(btn.dataset.photo)];$('lightbox').classList.add('show')}));
+function closeBox(){$('lightbox').classList.remove('show')}
+$('closeLightbox').addEventListener('click',closeBox);
+$('lightbox').addEventListener('click',e=>{if(e.target===$('lightbox'))closeBox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+function updateCounter(){
+ const start=new Date(2026,7,25,0,0,0),now=new Date();let diff=Math.max(0,now-start);
+ const days=Math.floor(diff/86400000);diff-=days*86400000;
+ const hours=Math.floor(diff/3600000);diff-=hours*3600000;
+ const minutes=Math.floor(diff/60000);diff-=minutes*60000;
+ const seconds=Math.floor(diff/1000);
+ $('days').textContent=days;$('hours').textContent=String(hours).padStart(2,'0');$('minutes').textContent=String(minutes).padStart(2,'0');$('seconds').textContent=String(seconds).padStart(2,'0');
+}
+updateCounter();setInterval(updateCounter,1000);
+function burstHearts(count=12){for(let i=0;i<count;i++){let h=document.createElement('span');h.className='float-heart';h.textContent=['♥','♡','❤'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'%';h.style.fontSize=(14+Math.random()*24)+'px';h.style.animationDuration=(3+Math.random()*3)+'s';$('hearts').appendChild(h);setTimeout(()=>h.remove(),6500)}}
+$('kiss').addEventListener('click',()=>{burstHearts(45);$('kissMessage').textContent='Um beijo enorme para você, meu amor! Nunca se esqueça do quanto é especial para mim. ❤️'});
+</script>
+</body></html>
